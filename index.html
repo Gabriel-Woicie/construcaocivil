@@ -1,0 +1,416 @@
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mella</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="icon" href="/Imagens/favicon.png" type="image/png">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    <body data-spy="scroll" data-target="#navbar" data-offset="0">
+        <!-- Barra de navegação -->
+        <div class="container">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="Logo1000x1000.png" width="40" height="42" alt="">          
+            <a class="navbar-brand" href="index.html">Mella</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                <a class="nav-link" href="#sobrenos">Sobre Nós<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Serviços
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#maodeobra">Mão de Obra</a>
+                    <a class="dropdown-item" href="#projetos">Projetos</a>
+                </div>
+                </li>
+            </ul>
+            <a href="#contato">
+                <button type="button" class="btn btn-outline-success">Contato</button>
+            </a>
+            </div>
+        </nav>
+        </div>
+        <!--Carousel-->
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="Imagens/banner-01.png" alt="Primeiro Slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="Imagens/banner-02.png" alt="Segundo Slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="Imagens/banner-03.png" alt="Terceiro Slide">
+                </div>
+            </div>
+        <!-- Controles de Navegação -->
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+    </a>
+
+        <!-- Indicadores de Slides -->
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+        <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+    </ol>
+
+        </div>
+        <!-- Conteúdo principal 
+        <header class="jumbotron">
+            <div class="container">
+                <h1 class="display-4">Construções Mella</h1>
+                <p class="lead">Sua parceira confiável em construção civil.</p>
+            </div>
+        </header> -->
+
+        <!-- Seção de Serviços -->
+            <div class="container custom-container" id="maodeobra">
+            <div class="alert alert-secondary custom-alert" role="alert" data-spy="scroll" data-target="#navbar" data-offset="0">
+                <h2 class="text-center">Mão de Obra</h2>
+            </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 mt-3">
+                    <div class="card">
+                        <img class="card-img-top" src="Imagens/jovem-artesao-construindo-uma-casa.jpg" alt="muro de alvenaria">
+                        <div class="card-body">
+                        <h5 class="card-title">Parede de Alvenaria</h5>
+                        <p class="card-text">
+                            <ul class="list-unstyled">
+                                <li>Caracteristicas:
+                                <ul>
+                                    <li>Execução da parede</li>
+                                    <li>Chapiscar</li>
+                                    <li>Rebocar as duas faces</li>
+                                </ul>
+                                </li>
+                            </ul>
+                        </p>
+                        <p><strong>R$ 90,00 m/2</strong></p>
+                        <a href="paredealvenaria.html" class="btn btn-primary">Solicitar Orçamento</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 mt-3">
+                    <div class="card">
+                        <img class="card-img-top" src="Imagens/tiler-trabalhando-na-renovacao-do-apartamento.jpg" alt="Imagem de capa do card">
+                        <div class="card-body">
+                        <h5 class="card-title">Porcelanato</h5>
+                        <p class="card-text">
+                            <ul class="list-unstyled">
+                                <li>Caracteristicas:
+                                <ul>
+                                    <li>Preparação da Superficie</li>
+                                    <li>Aplicação do Adesivo</li>
+                                    <li>Instalação das Peças</li>
+                                </ul>
+                                </li>
+                            </ul>
+                        </p>
+                        <p><strong>R$ 50,00 m/2</strong></p>
+                        <a href="porcelanato.html" class="btn btn-primary">Solicitar Orçamento</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 mt-3">
+                    <div class="card">
+                        <img class="card-img-top" src="Imagens/pintura.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                        <h5 class="card-title">Pintura</h5>
+                        <p class="card-text">
+                            <ul class="list-unstyled">
+                                <li>Caracteristicas:
+                                <ul>
+                                    <li>Lixar</li>
+                                    <li>Texturas: Variam entre R$ 5,00 a R$ 10,00 adicionais</li>
+                                </ul>
+                                </li>
+                            </ul>
+                        </p>
+                        <p><strong>R$ 25,00 m/2</strong></p>
+                        <a href="pintura.html" class="btn btn-primary">Solicitar Orçamento</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Portfólio de Projetos -->
+            <div class="container custom-container" data-spy="scroll" data-target="#navbar" data-offset="0" >
+            <div class="alert alert-secondary" role="alert" id="projetos">
+                <h2 class="text-center">Projetos</h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 mt-3">
+                        <div class="card">
+                            <img class="card-img-top" src="Imagens/ilhas_da_grecia.png" alt="Imagem de capa do card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ilhas da Grécia</h5>
+                                <p class="card-text">
+                                    <ul class="list-unstyled">
+                                        <li>Características:
+                                            <ul>
+                                                <li>Florianópolis - SC</li>
+                                                <li>2 Dormitórios</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </p>
+                                <p><strong>R$ 25,00 m/2</strong></p>
+                                
+                                <!-- Vídeo do YouTube incorporado -->
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dSA3HmagPIw?si=UbIv4OgGpGf7tF-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-4 mt-3">
+                        <div class="card">
+                            <img class="card-img-top" src="Imagens/new_life_granja_vianna.png" alt="Imagem de capa do card">
+                            <div class="card-body">
+                            <h5 class="card-title">New Life Granja Vianna</h5>
+                            <p class="card-text">
+                                <ul class="list-unstyled">
+                                    <li>Caracteristicas:
+                                    <ul>
+                                        <li>Balneario Camboriú - SC</li>
+                                        <li>1 e 2 Dormitórios</li>
+                                    </ul>
+                                    </li>
+                                </ul>
+                            </p>
+                            <p><strong>R$ 25,00 m/2</strong></p>
+                            <!-- Vídeo do YouTube incorporado -->
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/vbravVW0ngw?si=ffXFwA4IiesADQ9-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 mt-3">
+                        <div class="card">
+                            <img class="card-img-top" src="Imagens/prosperita_residencial.png" alt="Imagem de capa do card">
+                            <div class="card-body">
+                            <h5 class="card-title">Prosperita Residencial</h5>
+                            <p class="card-text">
+                                <ul class="list-unstyled">
+                                    <li>Caracteristicas:
+                                    <ul>
+                                        <li>Chapecó - SC</li>
+                                        <li>2 e 3 Dormitórios</li>
+                                    </ul>
+                                    </li>
+                                </ul>
+                            </p>
+                            <p><strong>R$ 25,00 m/2</strong></p>
+                            <!-- Vídeo do YouTube incorporado -->
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/CpCIFjC-LUg?si=VCTXh4KPn1vRHnsr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Sobre nós-->
+        <section class="container my-5" id="sobrenos">
+            <div class="row" data-spy="scroll" data-target="#navbar" data-offset="0">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Sobre Nós</h2>
+                    <p>A história da Construções Mella começou há mais de quatro décadas, quando nosso fundador, Antonio Mella,
+                        um habilidoso mestre de obras, decidiu transformar sua paixão pela construção em um legado duradouro.
+                        Com uma visão clara e um trabalho árduo incansável, Antonio começou com projetos modestos, construindo 
+                        casas para famílias locais.</p>
+                    <p>Hoje, a Construções Mella é uma referência no mercado de construção civil. Nossos valores fundamentais de integridade,
+                        excelência e compromisso continuam a ser os pilares da nossa empresa. Estamos orgulhosos de nossa equipe de profissionais
+                        talentosos e dedicados, que compartilham nossa visão de construir não apenas edifícios, mas também relacionamentos duradouros
+                        com nossos clientes e parceiros.</p>
+                    <p>Na Construções Mella, nossa abordagem à construção civil é centrada no cliente. Colocamos nossos clientes 
+                        em primeiro lugar em cada projeto, ouvindo suas necessidades e objetivos para entregar soluções personalizadas 
+                        que superem suas expectativas.</p>
+                    <p>Além disso, estamos comprometidos com práticas de construção sustentável e inovação tecnológica. Procuramos constantemente
+                        maneiras de reduzir nosso impacto ambiental e adotar as mais recentes tecnologias para melhorar a eficiência e a qualidade
+                        de nossos projetos.</p>
+                    <p>Em cada tijolo que colocamos e em cada projeto que entregamos, a Construções Mella está comprometida em construir 
+                        um futuro sólido e duradouro para nossos clientes, comunidades e parceiros.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="Imagens/sobre_nos_imagem.jpg" alt="Imagem Sobre Nós" class="img-fluid">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mt-3">
+                    <address>
+                        <strong>Endereço:</strong>
+                        <br> Rua José Garibaldi Rocha Tinn, 760D 
+                        <br> Cidade Chapecó, SC
+                        <br> CEP: 89814-087
+                    </address>
+                </div>
+                <div class="col-lg-4 mt-3">
+                    <address>
+                        <strong>Telefone:</strong>
+                        <br> (49) 99145-0207
+                    </address>
+                </div>
+                <div class="col-lg-4 mt-3">
+                    <address>
+                        <strong>E-mail:</strong>
+                        <br> gabriel.woicie@zohomail.com
+                    </address>
+                </div>
+            </div>
+            <div class="container">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3551.3949342234396!2d-52.62337241021084!3d-27.11236803656211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b41caf771ec1%3A0x3513748ea21b7c45!2sR.%20Jos%C3%A9%20G.%20Rocha%20Timm%2C%2034%20-%20Santo%20Ant%C3%B4nio%2C%20Chapec%C3%B3%20-%20SC%2C%2089814-087!5e0!3m2!1spt-BR!2sbr!4v1694325728403!5m2!1spt-BR!2sbr"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>   
+        </section>
+        <!--Contato-->
+        <section class="container my-5" id="contato">
+            <h2 class="mb-4">Contato</h2>
+            <div class="row" data-spy="scroll" data-target="#navbar" data-offset="0">
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="nome">Nome:</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Seu e-mail">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea class="form-control" id="mensagem" rows="4" placeholder="Sua mensagem"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <address>
+                        <strong>Endereço:</strong><br> Rua José Garibaldi Rocha Tinn, 760D 
+                        <br> Cidade Chapecó, SC
+                        <br> CEP: 89814-087
+                        <br>
+                        <br>
+                        <strong>Telefone:</strong>
+                        <br>(49) 99145-0207
+                        <br>
+                        <br>
+                        <strong>E-mail:</strong><br>
+                        gabriel.woicie@zohomail.com
+                        <br>
+                        <br>
+                        <strong>Redes Sociais</strong><br>
+                        <a href="https://www.instagram.com/gabiwoicie/" target="_blank">Instagram</a>
+                    </address>
+                </div>
+            </div>
+        </section>
+        <!--Depoimentos-->
+        <section class="container my-5">
+            <h2 class="mb-4">Avaliações</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img class="rounded-circle mr-3" src="imagens/igor.jpg" alt="Imagem do Cliente Igor" width="50">
+                                <h5 class="card-title">Igor Luan Mulinari</h5>
+                            </div>
+                            <p class="card-text">Classificação: ★★★★★</p>
+                            <p class="card-text">"Contratei a Construções Mella para um projeto de reforma em minha casa, e fiquei extremamente satisfeito com o resultado. A equipe foi profissional, o trabalho foi concluído no prazo e o resultado final ficou incrível. Recomendo a todos!"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img class="rounded-circle mr-3" src="imagens/rodrigo.jpg" alt="Imagem do Cliente Rodrigo" width="50">
+                                <h5 class="card-title">Rodrigo Elias Santana da Rosa</h5>
+                            </div>
+                            <p class="card-text">Classificação: ★★★★☆</p>
+                            <p class="card-text">"Tive a oportunidade de utilizar os serviços da Construções Mella para uma pintura em meu apartamento. O trabalho foi bem feito e o preço foi justo. O único pequeno inconveniente foi que o prazo de conclusão foi um pouco mais longo do que o esperado."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img class="rounded-circle mr-3" src="imagens/maicon.jpg" alt="Imagem do Cliente Maicon" width="50">
+                                <h5 class="card-title">Maicon Antonio Calegari Filho</h5>
+                            </div>
+                            <p class="card-text">Classificação: ★★★★☆</p>
+                            <p class="card-text">"A Construções Mella superou minhas expectativas em todos os aspectos. Desde o atendimento inicial até a conclusão do projeto, eles foram profissionais e prestativos. Recomendo a todos que procuram serviços de construção de alta qualidade."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img class="rounded-circle mr-3" src="imagens/patrick.jpg" alt="Imagem do Cliente Patrick" width="50">
+                                <h5 class="card-title">Patrick Marlon Almeida</h5>
+                            </div>
+                            <p class="card-text">Classificação: ★★★★☆</p>
+                            <p class="card-text">"Contratei a Construções Mella para realizar um trabalho de revestimento em minha cozinha. Eles foram pontuais e o trabalho ficou muito bem feito. Gostaria apenas que tivessem sido um pouco mais transparentes sobre os custos adicionais."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img class="rounded-circle mr-3" src="imagens/joao.jpg" alt="Imagem do Cliente joao" width="50">
+                                <h5 class="card-title">João Pedro Siqueira</h5>
+                            </div>
+                            <p class="card-text">Classificação: ★★★★☆</p>
+                            <p class="card-text">"Estou muito feliz com o serviço da Construções Mella. Eles construíram minha casa do zero, e o resultado final é simplesmente incrível. A equipe é altamente competente e atenciosa. Recomendo sem hesitação!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Rodapé -->
+        <footer class="bg-dark text-white py-3">
+            <div class="container text-center">
+                <p>&copy; 2023 Construções Mella. Todos os direitos reservados. (By Gabriel Woiciechowski)</p>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+        <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+        <a id="robbu-whatsapp-button" target="_blank" href="https://api.whatsapp.com/send?phone=55049991450207&text=Ol%C3%A1,%20gostaria%20de%20saber%20sobre...">
+            <div class="rwb-tooltip">Fale Conosco</div>
+            <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
+        </a>
+    </body>
+    </html>
